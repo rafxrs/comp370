@@ -1,0 +1,13 @@
+prefix=/home/rreis/python/miniconda3_py313
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.13.8
+Description: libXML library version2.
+Requires.private:  icu-i18n
+Libs: -L${libdir} -lxml2 
+Libs.private:  -L/home/rreis/python/miniconda3_py313/lib -lz -L/home/rreis/python/miniconda3_py313/lib -llzma  -L/home/rreis/python/miniconda3_py313/lib  -lm   
+Cflags: -I${includedir}/libxml2 -I/home/rreis/python/miniconda3_py313/include 

@@ -1,0 +1,13 @@
+prefix=/home/rreis/python/miniconda3_py313
+exec_prefix=/home/rreis/python/miniconda3_py313
+libdir=/home/rreis/python/miniconda3_py313/lib
+sharedlibdir=/home/rreis/python/miniconda3_py313/lib
+includedir=/home/rreis/python/miniconda3_py313/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "password": false,
+  "pid": 3216,
+  "port": 8888,
+  "root_dir": "/home/rreis/unit3",
+  "secure": false,
+  "sock": "",
+  "token": "ae204eb048a8c8823340f54dfe3497edc9b27ff003df628a",
+  "url": "http://localhost:8888/",
+  "version": "2.17.0"
+}

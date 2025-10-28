@@ -1,0 +1,10 @@
+# Ignore heavy data & cache
+data/
+downloads/
+*.csv
+*.npy
+*.h5
+.vscode-server/
+__pycache__/
+.ipynb_checkpoints/
+venv/
