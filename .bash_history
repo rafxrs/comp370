@@ -326,3 +326,94 @@ git commit -m "initial commit"
 git branch -M main
 git remote add origin git@github.com:rafxrs/comp370.git
 git push -u origin main
+git status
+git add .
+git commit -m "removed tweets csv (too large)"
+git branch -m main
+git push -u origin main
+git rm --cached ~/unit3/data/IRA_handle_tweets_1.csv
+git status
+df -h
+rm -rd .git/indox.lock
+rm -rd .git/index.lock
+rm -rf .git/index.lock
+git gc --prune=now
+sudo du -h /home/rreis | sort -rh | head -20
+rm -f .git/index.lock
+git reset --hard
+sudo du -h /home/rreis | sort -rh | head -20
+rm -rf ~/.vscode-server
+rm -rf .git
+git init
+git remote add origin git@github.com:rafxrs/comp370.git
+git add .
+cat > .gitignore <<'EOF'
+# Ignore heavy data & cache
+data/
+downloads/
+*.csv
+*.npy
+*.h5
+.vscode-server/
+__pycache__/
+.ipynb_checkpoints/
+venv/
+EOF
+
+git add .gitignore
+git commit -m 
+git commit -m "initial commit"
+git branch -M main
+git push -u origin main
+clear
+cd unit6
+df -h
+df -h
+clear
+cd homework/
+1
+cd 1
+clear
+mkdir data
+cd data
+wget https://github.com/fivethirtyeight/russian-troll-tweets/raw/master/IRAhandle_tweets_1.csv
+clear
+head -n 1 IRAhandle_tweets_1.csv 
+head IRAhandle_tweets_1.csv 
+clear
+head -n 10001  IRAhandle_tweets_1.csv > tweets.csv
+wc -l tweets.csv 
+cd
+homework/
+hw1
+cd homework/
+cd hw1
+cd data/
+clear
+pip list
+clear
+cd
+cd homework/
+cd hw1
+clear
+head -n 3 data/contents.csv 
+head data/contents.csv 
+wc -l data/contents.csv 
+cat data/contents.csv | uniq | wc -l
+cd data/
+clear
+wget https://github.com/fivethirtyeight/russian-troll-tweets/raw/master/IRAhandle_tweets_1.csv
+clear
+conda activate base
+python -m scripts.collect_trending -o data/trending.json
+cd hw7
+python -m scripts.collect_trending -o data/trending.json
+pip install bs4
+clear
+which python
+python hw7/scripts/collect_trending.py -o hw7/data/trending.json
+cd hw7
+python hw7/scripts/collect_trending.py -o hw7/data/trending.json
+python scripts/collect_trending.py -o data/trending.json
+python -m scripts.collect_trending -o data/trending.json
+python -m scripts.collect_trending -o data/trending2.json
