@@ -417,3 +417,36 @@ python hw7/scripts/collect_trending.py -o hw7/data/trending.json
 python scripts/collect_trending.py -o data/trending.json
 python -m scripts.collect_trending -o data/trending.json
 python -m scripts.collect_trending -o data/trending2.json
+cd hw2
+head -n 2 data/clean_dialog.csv 
+head -n 4 data/clean_dialog.csv 
+clear
+python scripts/preparation_scripts/collect_data.py 
+clear
+python scripts/preparation_scripts/process_data.py 
+head -n 5 data/processed_dialog.csv 
+python scripts/annotation_scripts/annotate_data.py 
+clear
+head -n 30 data/annotated_dialog.csv 
+sudo apt update
+sudo apt update -y
+clear
+sudo apt install apache2 -y
+sudo apt install apache2 
+sudp dpkg --configure -a
+sudo dpkg --configure -a
+sudo apt install apache2 -y
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo dnf -update -y
+cd ..
+sudo nano /etc/apache2/ports.conf
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo nano /etc/apache2/ports.conf
+sudo nano /etc/apache2/sites-available/000-default.conf
+clear
+mv homework/hw3/comp370_hw3.txt /var/www/hwtml
+sudo mv homework/hw3/comp370_hw3.txt /var/www/hwtml
+conda activate base

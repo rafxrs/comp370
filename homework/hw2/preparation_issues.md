@@ -1,0 +1,1 @@
+We have to remove ad libs as well as unkown characters described in the transcipt by <> brackets. Apart from that there weren't that many issues getting a good csv.
