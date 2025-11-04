@@ -450,3 +450,53 @@ clear
 mv homework/hw3/comp370_hw3.txt /var/www/hwtml
 sudo mv homework/hw3/comp370_hw3.txt /var/www/hwtml
 conda activate base
+conda activate base
+sudo systemctl restart apache2
+sudo netstat -tulnp | grep apache2
+sudo vim /etc/apache2/ports.conf 
+sudo echo  /etc/apache2/ports.conf 
+sudo cat  /etc/apache2/ports.conf 
+clear
+sudo vim /etc/apache2/sites-available/000-default.conf
+ls /var/www/html/
+ls /var/www/
+ls /var/www/html/
+cd /var/www/html/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd var
+ls
+cd www
+ls
+rm hwtml 
+sudo rm hwtml 
+ls
+cd ..
+vim var/www/html/comp370_hw3.txt
+ls var/www/html/
+vim var/www/html/comp370_hw3.txt
+ls var/www/html/
+sudo vim var/www/html/comp370_hw3.txt
+ls var/www/html/
+sudo cat var/www/html/comp370_hw3.txt
+clear
+sudo vim var/www/html/comp370_hw3.txt
+sudo cat var/www/html/comp370_hw3.txt
+sudo vim var/www/html/comp370_hw3.txt
+sudo cat var/www/html/comp370_hw3.txt
+sudo vim var/www/html/comp370_hw3.txt
+clear
+sudo apt install mariadb-server
+clear
+sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf 
+cat vim /etc/mysql/mariadb.conf.d/50-server.cnf 
+sudo systemctl restart mariadb
+\
+sudo mysql
+sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf 
+sudo systemctl restart mariadb
