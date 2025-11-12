@@ -1,0 +1,1 @@
+“HEAT/HOT WATER” complaints dominate early 2024, exceeding 80 000 reports citywide, but drop sharply to near zero in the summer, consistent with seasonal heating needs. 

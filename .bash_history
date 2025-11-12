@@ -500,3 +500,205 @@ sudo systemctl restart mariadb
 sudo mysql
 sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf 
 sudo systemctl restart mariadb
+cd hw4
+wc -l data/clean_dialog.csv 
+head -n 2 data/clean_dialog.csv 
+head data/clean_dialog.csv 
+tail data/clean_dialog.csv 
+tail -n 20 data/clean_dialog.csv 
+head -n 20 data/clean_dialog.csv 
+clear
+cut -d',' -f1 data/clean_dialog.csv 
+cut -d',' -f1 data/clean_dialog.csv | sort | uniq
+cut -d',' -f1 data/clean_dialog.csv | sort | uniq | wc -l 
+cut -d',' -f4 data/clean_dialog.csv | sort | uniq -c | sort -nr | head -n 10
+shuf -n 10 data/clean_dialog.csv
+grep -c "Twilight Sparkle" data/clean_dialog.csv
+cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle"
+cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity"
+cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie"
+cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash"
+cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy"
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(wc -l < data/clean_dialog.csv) - 1  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+echo "Twilight Sparkle,$twilight,$((twilight * 100 / total))" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$((rarity * 100 / total))" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$((pinkie * 100 / total))" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$((rainbow * 100 / total))" >> data/Line_percentages.csv    
+echo "Fluttershy,$fluttershy,$((fluttershy * 100 / total))" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(wc -l < data/clean_dialog.csv) - 1  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+echo "Twilight Sparkle,$twilight,$((twilight * 100 / $total))" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$((rarity * 100 / $total))" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$((pinkie * 100 / $total))" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$((rainbow * 100 / $total))" >> data/Line_percentages.csv
+echo "Fluttershy,$fluttershy,$((fluttershy * 100 / $total))" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(wc -l < data/clean_dialog.csv) - 1  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+echo "Twilight Sparkle,$twilight,$(($twilight * 100 / $total))" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$(($rarity * 100 / $total))" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$(($pinkie * 100 / $total))" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$(($rainbow * 100 / $total))" >> data/Line_percentages.csv
+echo "Fluttershy,$fluttershy,$(($fluttershy * 100 / $total))" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+echo "Twilight Sparkle,$twilight,$(($twilight * 100 / $total))" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$(($rarity * 100 / $total))" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$(($pinkie * 100 / $total))" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$(($rainbow * 100 / $total))" >> data/Line_percentages.csv
+echo "Fluttershy,$fluttershy,$(($fluttershy * 100 / $total))" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+echo "Twilight Sparkle,$twilight,$(($twilight * 100 // $total))" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$(($rarity * 100 // $total))" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$(($pinkie * 100 // $total))" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$(($rainbow * 100 // $total))" >> data/Line_percentages.csv
+echo "Fluttershy,$fluttershy,$(($fluttershy * 100 // $total))" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+# Function for percentage with 2 decimals
+pct() { echo "scale=2; $1 * 100 / $total" | bc}; echo "Twilight Sparkle,$twilight,$(pct $twilight)" >> data/Line_percentages.csv; echo "Rarity,$rarity,$(pct $rarity)" >> data/Line_percentages.csv; echo "Pinkie Pie,$pinkie,$(pct $pinkie)" >> data/Line_percentages.csv; echo "Rainbow Dash,$rainbow,$(pct $rainbow)" >> data/Line_percentages.csv; echo "Fluttershy,$fluttershy,$(pct $fluttershy)" >> data/Line_percentages.csv; 
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+pct() { echo "scale=2; $1 * 100 / $total" | bc}; echo "Twilight Sparkle,$twilight,$(pct $twilight)" >> data/Line_percentages.csv; echo "Rarity,$rarity,$(pct $rarity)" >> data/Line_percentages.csv; echo "Pinkie Pie,$pinkie,$(pct $pinkie)" >> data/Line_percentages.csv; echo "Rainbow Dash,$rainbow,$(pct $rainbow)" >> data/Line_percentages.csv; echo "Fluttershy,$fluttershy,$(pct $fluttershy)" >> data/Line_percentages.csv; twilight
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+pct() {   echo "scale=2; $1 * 100 / $total" | bc; }
+echo "Twilight Sparkle,$twilight,$(($twilight * 100 / $total))" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$(($rarity * 100 / $total))" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$(($pinkie * 100 / $total))" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$(($rainbow * 100 / $total))" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+pct() {   echo "scale=2; $1 * 100 / $total" | bc; }
+echo "Twilight Sparkle,$twilight,$(pct $twilight)" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$(pct $rarity)" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$(pct $pinkie)" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$(pct $rainbow)" >> data/Line_percentages.csv
+echo "Fluttershy,$fluttershy,$(pct $fluttershy)" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+pct() {echo "scale=2; $1 * 100 / $total" | bc}
+echo "Twilight Sparkle,$twilight,$(pct $twilight)" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$(pct $rarity)" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$(pct $pinkie)" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$(pct $rainbow)" >> data/Line_percentages.csv
+echo "Fluttershy,$fluttershy,$(pct $fluttershy)" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+pct() { echo "scale=2; $1 * 100 / $total" | bc}; echo "Twilight Sparkle,$twilight,$(pct $twilight)" >> data/Line_percentages.csv; echo "Rarity,$rarity,$(pct $rarity)" >> data/Line_percentages.csv; echo "Pinkie Pie,$pinkie,$(pct $pinkie)" >> data/Line_percentages.csv; echo "Rainbow Dash,$rainbow,$(pct $rainbow)" >> data/Line_percentages.csv; echo "Fluttershy,$fluttershy,$(pct $fluttershy)" >> data/Line_percentages.csv
+touch data/Line_percentages.csv
+echo "pony_name,total_line_count,percent_all_lines" > data/Line_percentages.csv
+total=$(( $(wc -l < data/clean_dialog.csv) - 1 ))  # subtract 1 for header
+twilight=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Twilight Sparkle")
+rarity=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rarity")
+pinkie=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Pinkie Pie")
+rainbow=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Rainbow Dash")
+fluttershy=$(cut -d',' -f3 data/clean_dialog.csv | grep -c "Fluttershy")
+pct() {   echo "scale=2; $1 * 100 / $total" | bc; }
+echo "Twilight Sparkle,$twilight,$(pct $twilight)" >> data/Line_percentages.csv
+echo "Rarity,$rarity,$(pct $rarity)" >> data/Line_percentages.csv
+echo "Pinkie Pie,$pinkie,$(pct $pinkie)" >> data/Line_percentages.csv
+echo "Rainbow Dash,$rainbow,$(pct $rainbow)" >> data/Line_percentages.csv
+echo "Fluttershy,$fluttershy,$(pct $fluttershy)" >> data/Line_percentages.csv
+clear
+cd ..
+cd /var/www/html/
+ls
+cd ..
+df-
+df -h
+sudo du -h --max-depth=1 / | sort -hr | head -20
+sudo apt clean
+sudo apt autoremove -y
+df -h
+clear
+df -h
+du -h --max-depth=1 ~ | sort -hr
+sudo rm -rf ~/.vscode-server/*
+df -h
+clear
+df -h
+clear
+scp hw5/scripts/borough_complaints.py \\wsl.localhost\Ubuntu\home\rreis\COMP370\homework
+scp -i comp370:~homework/hw5/scripts/borough_complaints.py .
+scp comp370:~homework/hw5/scripts/borough_complaints.py .
+cat ~/.ssh/config
+cd
+cat ~/.ssh/config
+cat ~/.ssh
+ls ~/.ssh
+clear
+pip install matplotlib
+df -h
+clear
+sudo du -h ~ | sort -rh | head -20
+pip cache purge
+conda clean --all -y
+cd /home/rreis/<repo>
