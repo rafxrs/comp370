@@ -21,6 +21,10 @@ Thumbs.db
 # Ignore Jupyter Notebook checkpoints and outputs
 *.ipynb_checkpoints
 *.nbconvert.ipynb
+# Jupyter / IPython
+.jupyter/
+.local/share/jupyter/
+.ipython/
 # Ignore Python virtual environments
 env/
 venv/
@@ -45,3 +49,27 @@ logs/
 *.log
 tmp/
 temp/       
+# Conda environments and packages
+python/miniconda3_*/
+pkgs/
+conda-meta/
+# VSCode settings
+.vscode/
+.vscode-server/*
+.vscode-server-insiders/
+# Shell and system config
+.bashrc
+.bash_logout
+.profile
+.lesshst
+.viminfo
+.sudo_as_admin_successful
+.python_history
+.gitconfig
+.ssh/
+# Build / dist
+build/
+dist/
+*.egg-info/
+*.tar.gz
+*.zip

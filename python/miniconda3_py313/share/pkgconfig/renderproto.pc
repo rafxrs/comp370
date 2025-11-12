@@ -1,7 +1,0 @@
-prefix=/home/rreis/python/miniconda3_py313
-includedir=${prefix}/include
-
-Name: RenderProto
-Description: Render extension headers
-Version: 0.11.1
-Cflags: -I${includedir}

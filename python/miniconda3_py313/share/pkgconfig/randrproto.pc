@@ -1,7 +1,0 @@
-prefix=/home/rreis/python/miniconda3_py313
-includedir=${prefix}/include
- 
-Name: RandrProto
-Description: Randr extension headers
-Version: 1.6.0
-Cflags: -I${includedir}

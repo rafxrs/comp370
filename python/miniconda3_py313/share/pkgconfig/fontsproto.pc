@@ -1,7 +1,0 @@
-prefix=/home/rreis/python/miniconda3_py313
-includedir=${prefix}/include
- 
-Name: FontsProto
-Description: Fonts extension headers
-Version: 2.1.3
-Cflags: -I${includedir}
