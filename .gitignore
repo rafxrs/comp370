@@ -8,3 +8,40 @@ downloads/
 __pycache__/
 .ipynb_checkpoints/
 venv/
+/.ssh/
+.env
+*.log   
+*.sqlite3
+.bash_history
+*.pyc
+.cache/
+# Ignore system files
+.DS_Store
+Thumbs.db   
+# Ignore Jupyter Notebook checkpoints and outputs
+*.ipynb_checkpoints
+*.nbconvert.ipynb
+# Ignore Python virtual environments
+env/
+venv/
+ENV/
+# Ignore IDE specific files
+.idea/
+*.code-workspace
+# Ignore compiled files
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+# Ignore coverage reports
+htmlcov/
+.coverage       
+.coverage.*
+# Ignore test output
+test_output/
+# Ignore logs and temporary files
+logs/
+*.log
+tmp/
+temp/       
