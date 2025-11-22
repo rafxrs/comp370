@@ -1,0 +1,2 @@
+scp "c:/users/rafae/downloads/mcgill.json" rreis@comp370:/home/rreis/homework/hw9/data/mcgill.json
+scp "c:/users/rafae/downloads/concordia.json" rreis@comp370:/home/rreis/homework/hw9/data/concordia.json
